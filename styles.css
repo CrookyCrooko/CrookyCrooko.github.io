@@ -67,4 +67,21 @@ html, body {
     padding-left: 2%;
     font-size: 20px;
     margin:1% ;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    text-align: center;
+     margin-bottom: 10px;
+    }
+}
+
+/* Initially hide the toggle sections */
+.toggle-section {
+    display: none;
+}
+
+.arrow {
+    margin-right: 2%;
+    color: #504b4b39;
 }

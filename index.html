@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoomoo's World</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <div class="content">
@@ -15,8 +17,14 @@
                 <img src="/images/pic1.jpeg" alt="profile_photo"></a>
             </div>
             <p class="am-info">
-                Energetic, diligent, and I have been told even funny at times. I have been blessed with a great sense of duty and responsability, and I strive for greatness in everything I put hands in. I love to see not only myself succeed but everyone around me. This is the part where I list my skills but you can see those things below, I would just say that I never run away from a challenge, I have dealt with many obstacles in this life that would have allowed me to justify my shortcomings but I have risen above those times of struggle, and have become a better me each time. I hope that was to your liking, if not, keep reading below. I got mad skillzz yo.
-                
+                Energetic, diligent, and I have been told even funny at times. I have been blessed with a great sense of
+                duty and responsability, and I strive for greatness in everything I put hands in. I love to see not only
+                myself succeed but everyone around me. This is the part where I list my skills but you can see those
+                things below, I would just say that I never run away from a challenge, I have dealt with many obstacles
+                in this life that would have allowed me to justify my shortcomings but I have risen above those times of
+                struggle, and have become a better me each time. I hope that was to your liking, if not, keep reading
+                below. I got mad skillzz yo.
+
             </p>
         </section>
         <aside class="sidebar">
@@ -32,25 +40,154 @@
                 <p> HTML/CSS </p>
                 <p> JavaScript </p>
             </div>
-
-            
-
         </aside>
+
         <main class="main-content">
-            <h3>Main Content</h3>
-            <div class="toggle-bar" onclick="toggleSection('resume')">Resume</div>
+            <!-- Main Body -->
+            <h3>The Goods</h3>
+
+            <!-- Toggle Bar <- Resume -> Arrow -->
+            <div class="toggle-bar" onclick="toggleSection('resume',this)"> Resume <span class="arrow">&#9660;</span></div>
             <div id="resume" class="toggle-section">
-            </div>
-            <div class="toggle-bar" onclick="toggleSection('projects')">Projects</div>
-            <div id="projects" class="toggle-section">
-                <div class="project-items" >
-                    
+                
+                <div class="resume-body">
+                    <div class="container">
+                        <div class="header">
+                            <h1>Robin Pena</h1>
+                            <p>Phone: (123) 456-7890 | Email: your.email@example.com | LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+                        </div>
+                
+                        <div class="section">
+                            <h2>Professional Summary</h2>
+                            <p>Versatile professional with a diverse background in retail, warehousing, tech support, security, and data management. Experienced in providing exceptional customer service, maintaining security and safety, and supporting technical operations in educational settings. Proven ability to adapt to different roles and environments, with a strong commitment to teamwork and problem-solving. Seeking to leverage my varied skill set in a dynamic and challenging role.</p>
+                        </div>
+                
+                        <div class="section">
+                            <h2>Education</h2>
+                            <ul>
+                                <li><strong>Bachelor of Science Computer Science</strong></li>
+                                <li>Boston University</li>
+                                <li>Graduated: May 2025</li>
+                            </ul>
+                        </div>
+                
+                        <div class="section">
+                            <h2>Work Experience</h2>
+                            <ul>
+                                <li>
+                                    <strong>IT Support </strong><br>
+                                    - Saint Sebastian's, Needham, MA<br>
+                                    June 2022 – curent
+                                    <ul>
+                                        <li>Provided technical support to students and staff for hardware and software issues.</li>
+                                        <li>Managed IT inventory and ensured proper functioning of classroom technology.</li>
+                                        <li>Conducted training sessions on basic IT skills and software usage.</li>
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <strong>Security Guard</strong><br>
+                                    - Saint Sebastian's, Needham, MA<br>
+                                    Dec 2020 – Current
+                                    <ul>
+                                        <li>Ensured the safety and security of students, staff, and property.</li>
+                                        <li>Monitored surveillance equipment and conducted regular patrols.</li>
+                                        <li>Responded to incidents and emergencies promptly and effectively.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Crew - Warehouse</strong><br>
+                                    Marble and Granite, Westwood, MA<br>
+                                    June 2018 – March 2020
+                                    <ul>
+                                        <li>Received, stored, and shipped products and materials.</li>
+                                        <li>Operated forklifts and other warehouse equipment.</li>
+                                        <li>Maintained a clean and organized warehouse environment.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Retail Associate</strong><br>
+                                    Walmart, Providence, RI<br>
+                                    Oct 2017 – Feb 2018
+                                    <ul>
+                                        <li>Assisted customers with product selection and purchases.</li>
+                                        <li>Managed inventory and restocked shelves.</li>
+                                        <li>Handled cash register transactions and provided excellent customer service.</li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                
+                        <div class="section">
+                            <h2>Skills</h2>
+                            <ul>
+                                <li>Technical Support</li>
+                                <li>Data Management</li>
+                                <li>Customer Service</li>
+                                <li>Security and Safety</li>
+                                <li>Inventory Management</li>
+                                <li>Database Management (SQL, Excel)</li>
+                                <li>Team Collaboration</li>
+                                <li>Problem-Solving</li>
+                            </ul>
+                        </div>
+                
+                        <div class="section">
+                            <h2>Volunteer Experience</h2>
+                            <ul>
+                                <li>
+                                    <strong>Tutor</strong><br>
+                                    Community Center, City, State<br>
+                                    September 2021 – Present
+                                    <ul>
+                                        <li>Provided academic support and tutoring to students in various subjects.</li>
+                                        <li>Assisted in developing study plans and educational resources.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Drive Coordinator</strong><br>
+                                    Charity Organization, City, State<br>
+                                    January 2020 – Present
+                                    <ul>
+                                        <li>Organized and managed drives to collect and send goods to low-income countries.</li>
+                                        <li>Coordinated with volunteers and local businesses for donations and logistics.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Member</strong><br>
+                                    National Leadership Society<br>
+                                    March 2019 – Present
+                                    <ul>
+                                        <li>Participated in leadership training and development programs.</li>
+                                        <li>Engaged in community service and networking events.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <div class="section">
+                            <h2>Hobbies</h2>
+                            <ul>
+                                <li>Cooking</li>
+                                <li>Fishing</li>
+                                <li>Grilling</li>
+                                <li>Meditating</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
+                
+            <div class="toggle-bar" onclick="toggleSection('projects', this)">Projects <span class="arrow">&#9660;</span></div>
+            <div id="projects" class="toggle-section"></div>
         </main>
         <footer class="footer">
             <h3>Footer</h3>
         </footer>
     </div>
 </body>
+
 </html>
