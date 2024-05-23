@@ -1,9 +1,11 @@
 html, body {
     height: 100%;
-    margin: 0;
+    margin-left: 3%;
+    margin-right: 2%;
 }
 
 .content {
+
     display: grid;
     grid-template-columns: 1fr 3fr; /* Two columns: sidebar (1fr) and main content (3fr) */
     grid-template-rows: auto 1fr auto; /* Three rows: header, main body, footer */
@@ -11,23 +13,34 @@ html, body {
         "about_me about_me"
         "sidebar main_content"
         "footer footer";
-        gap: 1rem; /* Optional: adds some space between the grid items */
+        gap: 0.5rem; /* Optional: adds some space between the grid items */
         height: 100vh; /* Make the grid container take the full viewport height */
-    
 }
 
+.am-info{
+    margin:1%;
+    padding: 2%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4%;
+}
 .about_me {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 1%;
     grid-area: about_me;
     background-color: gray;
 }
 
 .sidebar {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 1%;
     grid-area: sidebar;
     background-color: darkgray;
 
 }
 
 .main-content {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 1%;
     grid-area: main_content;
     background-color: lightgray;
 }
@@ -43,26 +56,34 @@ html, body {
 }
 
 .image-frame {
-    border: 2px solid #000; /* Frame border */
+    border: 2px solid #7d7979cb; /* Frame border */
     padding: 5px; /* Space between image and frame */
     margin-right: 1rem; /* Space between image and text */
     display: inline-block;
+    border-radius: 10%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    margin-left: 2.5%;
 }
 
 .image-frame img {
     max-width: 100px; /* Adjust size as needed */
     height: auto;
     display: block;
+    border-radius: 10%;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    
 }
 .skills {
     text-align: left;
     margin: 10px;
+   
     
 }
 .toggle-bar{
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
     text-shadow: 5ch;
-    background-color: white;
+    background-color: lightgray;
     border-radius: 1ch;
     padding-left: 2%;
     font-size: 20px;
@@ -79,9 +100,19 @@ html, body {
 /* Initially hide the toggle sections */
 .toggle-section {
     display: none;
+    
 }
 
 .arrow {
+    margin-top: 1%;
+    margin-bottom: 1%;
     margin-right: 2%;
     color: #504b4b39;
+}
+.header-resume {
+    padding: 5px;
+}
+
+.section {
+    padding: 5px;
 }
