@@ -75,6 +75,9 @@ html, body {
     min-width: 200px; /* Match the grid-template-columns value */
     display: flex;
     flex-direction: column;
+    color: rgb(0, 0, 0);
+    font-style: bold;
+    text-shadow: 2%;
 }
 
 /*Personal Info Controls*/
