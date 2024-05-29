@@ -1,201 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Example</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <!-- Body of Page 
+   ::: Divisions :::
+    Header: IMG + About Me Info
+    Sidebar: Personal Info + Skillss
+    Main-Content: Resume + ePortfolio
+    Footer: Social Media + Rights Reserved -->
+    <body>
+        <div class="container">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Crooky' Adventure</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-    <div class="content">
-
-        <section class="about_me">
-            <div class="image-frame">
-                <img src="/images/pic1.jpeg" alt="profile_photo"></a>
-            </div>
-            <p class="am-info">
-                Energetic, diligent, even funny at times, or so I've been told. I have been blessed with a great sense of duty and responsability, and I strive for greatness in everything I do. I love to see everyone around me succeed, specially me. This is the part where I try to hook you with a list of my achievements but you can see those things below, I would just say that I never say no to a challenge, I have dealt with many obstacles in this life that would have allowed me to justify running away but I have dealt with every stone thrown at me, and have become a better me each time. I hope that was to your liking, if not, keep reading below. I got mad skillzz yo.
-
-            </p>
-        </section>
-        <aside class="sidebar">
-            <h3 class="sidebar_title">Personal Info</h3>
-            <p> Email: robinapena@icloud.com</p>
-            <p> Name: Robin Pena</p>
-            <p> DOB: 12/1996 </p>
-
-            <div class="skills">
-                <h5> Proficiencies: </h5>
-                <div class="skills-levels">
-                    <p> Java </p>
-                    <p> Python</p>
-                    <p> HTML/CSS </p>
-                    <p> JavaScript </p>
+            <!-- About me section, quick info, header of page -->
+            <section id="about-me-image">
+                <div class="about-me-image-frame">
+                    <img src="/images/pic1.jpeg" alt="Profile Photo"></a>
                 </div>
-               
-            </div>
-        </aside>
+            </section>
 
-        <main class="main-content">
-            <!-- Main Body -->
-            <!-- Toggle Bar <- Resume -> Arrow -->
-            <div class="toggle-bar" onclick="toggleSection('resume',this)"> Resume <span class="arrow">&#9660;</span></div>
-            <div id="resume" class="toggle-section">
-                
-                <div class="resume-body">
-                    <div class="container">
-                        <div class="header-resume">
-                            <h1>Robin Pena</h1>
-                            <p>Email: <a target= "robinapena@icloud.com">robinapena@icloud.com</a> | LinkedIn: <a href="https://www.linkedin.com/in/robinapena/">https://www.linkedin.com/in/robinapena/</a></p>
-                        </div>
-                
-                        <div class="section">
-                            <h2>Professional Summary</h2>
-                            <p>Versatile professional with a diverse background in retail, warehousing, tech support, security, and data management. Experienced in providing exceptional customer service, maintaining security and safety, and supporting technical operations in educational settings. Proven ability to adapt to different roles and environments, with a strong commitment to teamwork and problem-solving. Seeking to leverage my varied skill set in a dynamic and challenging role.</p>
-                        </div>
-                
-                        <div class="section">
-                            <h2>Education</h2>
-                            <ul>
-                                <li><strong>Bachelor of Science - Computer Science</strong></li>
-                                <li>Boston University</li>
-                                <li>Graduated: May 2025</li>
-                            </ul>
-                        </div>
-                
-                        <div class="section">
-                            <h2>Work Experience</h2>
-                            <ul>
-                                <li>
-                                    <strong>IT Support </strong><br>
-                                    - Saint Sebastian's, Needham, MA<br>
-                                    June 2022 – curent
-                                    <ul>
-                                        <li>Provided technical support to students and staff for hardware and software issues.</li>
-                                        <li>Managed IT inventory and ensured proper functioning of classroom technology.</li>
-                                        <li>Conducted training sessions on basic IT skills and software usage.</li>
-                                    </ul>
-                                </li>
-                                
-                                <li>
-                                    <strong>Public Safety</strong><br>
-                                    - Saint Sebastian's, Needham, MA<br>
-                                    Dec 2020 – Current
-                                    <ul>
-                                        <li>Ensured the safety and security of students, staff, and property.</li>
-                                        <li>Monitored surveillance equipment and conducted regular patrols.</li>
-                                        <li>Responded to incidents and emergencies promptly and effectively.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Crew - Warehouse</strong><br>
-                                    Marble and Granite, Westwood, MA<br>
-                                    Feb 2018 – March 2020
-                                    <ul>
-                                        <li>Received, stored, and shipped stone slabs and materials.</li>
-                                        <li>Operated forklifts and other warehouse equipment.</li>
-                                        <li>Maintained a clean and organized warehouse environment.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Retail Associate</strong><br>
-                                    Walmart, Providence, RI<br>
-                                    Oct 2017 – Feb 2018
-                                    <ul>
-                                        <li>Assisted customers with product selection and purchases.</li>
-                                        <li>Managed inventory and restocked shelves.</li>
-                                        <li>Handled cash register transactions and provided exceptional walmart-esque customer service.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Service Manager</strong><br>
-                                    Chipotle, Boston, MA<br>
-                                    Mar 2015 – Oct 2017
-                                    <ul>
-                                        <li>Managed daily cash flow, ensuring accurate cash handling procedures, and prepared daily financial reports.</li>
-                                        <li>Trained and supervised team members, fostering a collaborative and efficient work environment.</li>
-                                        <li>Ensured compliance with health and safety regulations, maintained clean and organized workspaces, and streamlined operations to improve service speed and quality.</li>
-                                        <li>Analyzed sales data to identify trends, developed action plans to boost sales, and contributed to achieving revenue targets. </li>
-                                    </ul>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                
-                        <div class="section">
-                            <h2>Skills</h2>
-                            <ul>
-                                <li>Technical Support</li>
-                                <li>Data Management</li>
-                                <li>Customer Service</li>
-                                <li>Security and Safety</li>
-                                <li>Inventory Management</li>
-                                <li>Database Management (SQL, Excel)</li>
-                                <li>Team Collaboration</li>
-                                <li>Problem-Solving</li>
-                            </ul>
-                        </div>
-                
-                        <div class="section">
-                            <h2>Volunteer Experience</h2>
-                            <ul>
-                                <li>
-                                    <strong>Drive Coordinator</strong><br>
-                                     Boston, MA<br>
-                                    January 2022 – Present
-                                    <ul>
-                                        <li>Organized and managed drives to collect and send goods to low-income countries.</li>
-                                        <li>Coordinated with volunteers and local businesses for donations and logistics.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Tutor</strong><br>
-                                    Boston, MA<br>
-                                    September 2021 – Present
-                                    <ul>
-                                        <li>Provided academic support and tutoring to students in Spanish Learning.</li>
-                                        <li>Assisted in developing study plans and educational resources.</li>
-                                    </ul>
-                                </li>
-                                
-                                <li>
-                                    <strong>Member</strong><br>
-                                    National Society Leadership and Success<br>
-                                    March 2021 – Present
-                                    <ul>
-                                        <li>Participated in leadership training and development programs.</li>
-                                        <li>Engaged in community service and networking events.</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                
-                        <div class="section">
-                            <h2>Hobbies</h2>
-                            <ul>
-                                <li>Cooking</li>
-                                <li>Fishing</li>
-                                <li>I love me a good bbq.</li>
-                            </ul>
-                        </div>
+            <section id="about-me-info">
+                <div class="about-me-info-box"> 
+                    <h2 class="name-title">Robin Peña</h2>
+                    <h3 clsas="role-title">Worldwide Citizen</h3>
+                    <p class="aobut-me-text">
+                        Energetic, diligent, and occasionally funny, I've been blessed with a strong sense of duty and responsibility. I strive for excellence in everything I do and take pride in seeing those around me succeed. Instead of listing my achievements here (you'll find them below - if you into that sorta thing), I'd like to highlight my resilience and determination. I've faced numerous challenges that could have been reasons to give up, but I've tackled each one head-on and emerged stronger every time. I hope this introduction gives you a glimpse of who I am. If not, please read on - I got skills yo.
+
+                    </p>
+                </div>
+            </section>
+            <!-- Personal Info section, personal info, skillset, sidebar of page -->
+            <section id="sidebar">
+                <ul>
+                    <div class="personal-info"> 
+
+                        <li class="sbar-title"> Personal Info </li>
+                            <p class="pinfo"> Email:</p>  
+                                <p class="pans"> Robinapena@icloud.com</p>
+                            <p class="pinfo"> Phone:</p>  
+                                <p class="pans"> 857-770-8432</p>
+                            <p class="pinfo"> Address:</p>  
+                                <p class="pans"> Boston, MA</p>   
+                        
                     </div>
-
+                    <div class="sbar-title">
+                            <h5 id="skills"> Proficiencies: </h5>
+                                <p> Java </p>
+                                <p> Python</p>
+                                <p> HTML/CSS </p>
+                                <p> JavaScript </p>
+                    </div>
+                    <div class="skills">
+                        <p class="skills-text"> Skills Goes Here</p>
+                    </div>
+                </ul>
+            </section>
+            
+            <!-- Main Content section, Resume info, ePortfolio, center-        center-right content of page -->
+            <section id="main-content">
+                <div class="resume">
+                    <p class="resume-text">
+                        Resume Goes Here
+                    </p>
+                </div>
+                <div class="ePortfolio">
+                    <p class="ePortfolio-text">
+                        ePortfolio Goes here
+                    </p>
 
                 </div>
-            </div>
-                
-            <div class="toggle-bar" onclick="toggleSection('projects', this)">Projects <span class="arrow">&#9660;</span></div>
-            <div id="projects" class="toggle-section"></div>
-        </main>
-        <footer class="footer">
-            <h3>Footer</h3>
-        </footer>
-    </div>
- <script src="scripts/scripts.js"></script>
+            </section>
 
-</body>
-
+            <!-- Footer, Social media info, reserved rights , footer of page -->
+            <footer id="footer">
+                <p class="footer-text"> Footer goes here</p>
+            </footer>
+            </section>
+        </div>
+    </body>
 </html>

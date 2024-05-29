@@ -1,118 +1,112 @@
 html, body {
     height: 100%;
-    margin-left: 3%;
-    margin-right: 2%;
-}
-
-.content {
-
-    display: grid;
-    grid-template-columns: 1fr 3fr; /* Two columns: sidebar (1fr) and main content (3fr) */
-    grid-template-rows: auto 1fr auto; /* Three rows: header, main body, footer */
-    grid-template-areas: 
-        "about_me about_me"
-        "sidebar main_content"
-        "footer footer";
-        gap: 0.5rem; /* Optional: adds some space between the grid items */
-        height: 100vh; /* Make the grid container take the full viewport height */
-}
-
-.am-info{
-    margin:1%;
-    padding: 2%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 4%;
-}
-.about_me {
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 1%;
-    grid-area: about_me;
+    margin: 0;
+    padding: 0;
     background-color: gray;
 }
+/* Page Style Controls */
 
-.sidebar {
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 1%;
-    grid-area: sidebar;
-    background-color: darkgray;
-
+.container {
+    display: grid;
+    height: 100%;
+    position: relative;
+    grid-template-columns: 200px 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    grid-template-areas: 
+        "about-me-image about-me-info"
+        "sidebar main-content"
+        "footer footer";
 }
 
-.main-content {
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 1%;
-    grid-area: main_content;
-    background-color: lightgray;
-}
+/* Image Style Controls */
 
-.footer {
-    grid-area: footer;
-    background-color: gainsboro;
-}
-
-.about_me {
-    display: flex;
-    align-items: center; /* Vertically center align the items */
-}
-
-.image-frame {
-    border: 2px solid #7d7979cb; /* Frame border */
-    padding: 5px; /* Space between image and frame */
-    margin-right: 1rem; /* Space between image and text */
+.about-me-image-frame {
+    border: 2px solid #7d7979cb; 
+    padding: 5px; 
+    margin-right: 1rem; 
     display: inline-block;
     border-radius: 10%;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     margin-left: 2.5%;
 }
 
-.image-frame img {
-    max-width: 100px; /* Adjust size as needed */
+.about-me-image-frame img {
+    max-width: 128px; 
     height: auto;
     display: block;
     border-radius: 10%;
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.2);
 }
-.skills {
-    text-align: left;
-    margin: 10px;
-   
-    
+
+
+/* About Me Section Controls */
+
+#about-me-image {
+    background-color: gray;
+    grid-area: about-me-image;
+    box-sizing: border-box;
+    min-width: max-content;
+    justify-content: center;
+    margin: auto;
 }
-.toggle-bar{
-    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    text-shadow: 5ch;
-    background-color: lightgray;
-    border-radius: 1ch;
-    padding-left: 2%;
-    font-size: 20px;
-    margin:1% ;
-    cursor: pointer;
+
+#about-me-info {
+    background-color: whitesmoke;
+    grid-area: about-me-info;
     display: flex;
-    justify-content: space-between; /* Distribute space between items */
-    align-items: center; /* Center items vertically */
-    text-align: center;
-     margin-bottom: 10px;
-    }
+    align-items: center; 
+    padding: 1rem;
 }
 
-/* Initially hide the toggle sections */
-.toggle-section {
-    display: none;
-    
+
+/* Sidebar Section Controls */
+
+
+#sidebar {
+    background-color: gray;
+    grid-area: sidebar;
+    box-sizing: border-box;
+    min-width: 200px; /* Match the grid-template-columns value */
+    display: flex;
+    flex-direction: column;
 }
 
-.arrow {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-right: 2%;
-    color: #504b4b39;
-}
-.header-resume {
-    padding: 5px;
+/*Personal Info Controls*/
+.sbar-title{
+    margin-left: 10px;
+    font-size: larger;}
+.pinfo{
+    margin-left: 5px;
+    font-size: larger;
 }
 
-.section {
-    padding: 5px;
+.pans{
+    margin-left: 15px;
+}
+
+
+
+/* Main Content Section Controls */
+
+#main-content {
+    background-color: whitesmoke;
+    grid-area: main-content;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+
+
+
+/* Footer Section Controls */
+
+#footer {
+    background-color: blue;
+    grid-area: footer;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 1rem;
 }
