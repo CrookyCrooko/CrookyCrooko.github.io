@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color: rgb(121, 108, 141);
 }
 /* Page Style Controls */
 
@@ -21,7 +21,7 @@ html, body {
 /* Image Style Controls */
 
 .about-me-image-frame {
-    border: 2px solid #7d7979cb; 
+    border: 2px solid rgb(121, 108, 141);
     padding: 5px; 
     margin-right: 1rem; 
     display: inline-block;
@@ -42,7 +42,7 @@ html, body {
 /* About Me Section Controls */
 
 #about-me-image {
-    background-color: gray;
+    background-color: rgb(121, 108, 141);
     grid-area: about-me-image;
     box-sizing: border-box;
     min-width: max-content;
@@ -63,7 +63,7 @@ html, body {
 
 
 #sidebar {
-    background-color: gray;
+    background-color: rgb(121, 108, 141);
     grid-area: sidebar;
     box-sizing: border-box;
     min-width: 200px; /* Match the grid-template-columns value */
@@ -89,7 +89,7 @@ html, body {
 /* Main Content Section Controls */
 
 #main-content {
-    background-color: whitesmoke;
+    background-color: darkgray;
     grid-area: main-content;
     display: flex;
     flex-direction: column;
@@ -103,7 +103,7 @@ html, body {
 /* Footer Section Controls */
 
 #footer {
-    background-color: blue;
+    background-color: rgb(121, 108, 141);
     grid-area: footer;
     display: flex;
     align-items: center; 
