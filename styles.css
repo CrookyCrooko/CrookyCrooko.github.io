@@ -112,7 +112,7 @@ html, body {
 /* Footer Section Controls */
 
 #footer {
-    background-color: rgb(121, 108, 141);
+    background-color: rgb(39, 37, 41);
     grid-area: footer;
     display: flex;
     align-items: center; 
